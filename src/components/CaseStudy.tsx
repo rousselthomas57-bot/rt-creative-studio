@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const CALENDLY_URL = "https://calendly.com";
+const CALENDLY_URL = "https://calendly.com/roussel-thomas57/30min";
 
 export default function CaseStudy() {
   return (

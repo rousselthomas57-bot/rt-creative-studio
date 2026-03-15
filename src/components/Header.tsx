@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const CALENDLY_URL = "https://calendly.com";
+const CALENDLY_URL = "https://calendly.com/roussel-thomas57/30min";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

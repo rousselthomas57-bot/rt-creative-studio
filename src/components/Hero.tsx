@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const CALENDLY_URL = "https://calendly.com";
+const CALENDLY_URL = "https://calendly.com/roussel-thomas57/30min";
 
 export default function Hero() {
   return (
@@ -16,8 +16,10 @@ export default function Hero() {
       <div className="relative z-10 mx-auto max-w-[1320px] px-6 py-12 md:py-20 lg:py-24">
         <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:gap-0">
           {/* Text */}
-          <div className="relative z-20 md:w-[60%]">
-            <h1 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-text md:text-[48px] lg:text-[64px]">
+          <div className="relative z-20 md:w-[70%]">
+            <h1
+              className="font-extrabold leading-[1.1] tracking-tight text-text text-[32px] md:text-[clamp(32px,4.5vw,64px)]"
+            >
               <span
                 style={{
                   background: "linear-gradient(135deg, #146DFC, #0C4196)",
@@ -30,7 +32,7 @@ export default function Hero() {
               <br />
               pour votre entreprise
               <br />
-              <span className="md:whitespace-nowrap">grâce aux réseaux sociaux</span>
+              grâce aux réseaux sociaux
             </h1>
             <p className="mt-4 max-w-lg text-[14px] leading-relaxed text-gray-500 sm:text-[15px] md:mt-6 md:text-lg">
               Stratégie de contenu, vidéos courtes et accompagnement
