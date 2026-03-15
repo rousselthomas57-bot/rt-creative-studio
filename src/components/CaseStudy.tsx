@@ -5,7 +5,7 @@ const CALENDLY_URL = "https://calendly.com/roussel-thomas57/30min";
 export default function CaseStudy() {
   return (
     <section id="a-propos" className="relative py-16 md:py-24 overflow-hidden">
-<div className="relative z-10 mx-auto max-w-[1280px] px-6">
+      <div className="relative z-10 mx-auto max-w-[1280px] px-6">
         <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
           GuidMe : un cas concret
         </h2>
@@ -18,7 +18,7 @@ export default function CaseStudy() {
         <div className="mt-12 flex flex-col gap-6 lg:flex-row">
           {/* Blue card with gradient */}
           <div
-            className="relative rounded-3xl p-8 pb-0 text-white md:p-10 md:pb-0 h-[358px] mx-auto lg:mx-0 lg:w-[649px] lg:h-[771px] lg:flex-shrink-0 overflow-hidden"
+            className="relative rounded-3xl p-8 pb-0 text-white md:p-10 md:pb-0 h-[358px] mx-auto lg:mx-0 lg:w-[50%] lg:h-[771px] lg:flex-shrink-0 overflow-hidden"
             style={{
               background: "linear-gradient(160deg, #4A8CFF 0%, #2563FF 30%, #1A4FE0 100%)",
             }}
@@ -32,10 +32,10 @@ export default function CaseStudy() {
                 height={40}
                 className="h-7 w-auto md:h-14"
               />
-              <p className="mt-6 text-[24px] font-extrabold leading-tight whitespace-nowrap md:text-[48px]">
+              <p className="mt-6 text-[24px] font-extrabold leading-tight md:text-[clamp(28px,3.5vw,48px)]">
                 de 48 à +14k abonnés
               </p>
-              <p className="mt-4 hidden lg:block max-w-md text-[16px] leading-relaxed text-white/80 md:text-[18px]">
+              <p className="mt-4 hidden lg:block max-w-md text-[clamp(14px,1.2vw,18px)] leading-relaxed text-white/80">
                 Formats courts, régularité éditoriale et stratégie organique :
                 un cas concret de croissance avec GuidMe.
               </p>
@@ -87,7 +87,7 @@ export default function CaseStudy() {
           </div>
 
           {/* Stats column */}
-          <div className="flex flex-1 flex-col gap-5">
+          <div className="flex flex-1 flex-col gap-5 min-w-0">
             {/* Top stats */}
             <div className="grid grid-cols-2 gap-4">
               <div
@@ -99,7 +99,7 @@ export default function CaseStudy() {
                   WebkitBackdropFilter: "blur(12px)",
                 }}
               >
-                <p className="text-2xl font-extrabold text-text md:text-4xl">
+                <p className="text-2xl font-extrabold text-text lg:text-[clamp(24px,2.5vw,36px)]">
                   +13,2 M
                 </p>
                 <p className="mt-2 text-xs md:text-sm text-text leading-snug">
@@ -115,7 +115,7 @@ export default function CaseStudy() {
                   WebkitBackdropFilter: "blur(12px)",
                 }}
               >
-                <p className="text-2xl font-extrabold text-text md:text-4xl">
+                <p className="text-2xl font-extrabold text-text lg:text-[clamp(24px,2.5vw,36px)]">
                   +14,000
                 </p>
                 <p className="mt-2 text-xs md:text-sm text-text leading-snug">
@@ -130,30 +130,30 @@ export default function CaseStudy() {
               style={{ background: "linear-gradient(135deg, #000000 0%, #666666 100%)" }}
             >
               <div className="flex items-center justify-between">
-                <p className="text-[22px] md:text-[38px] font-extrabold text-white leading-tight">Résultats obtenus</p>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mr-4">
+                <p className="text-[22px] lg:text-[clamp(22px,2.8vw,38px)] font-extrabold text-white leading-tight">Résultats obtenus</p>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mr-4 flex-shrink-0">
                   <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
                   <polyline points="17 6 23 6 23 12" />
                 </svg>
               </div>
-              <div className="mt-5 grid grid-cols-3 gap-4">
+              <div className="mt-5 grid grid-cols-3 gap-3">
                 <div>
-                  <p className="text-[24px] md:text-[42px] font-extrabold text-white leading-tight">
+                  <p className="text-[24px] lg:text-[clamp(24px,2.8vw,42px)] font-extrabold text-white leading-tight">
                     +150
                   </p>
-                  <p className="mt-1 text-[14px] md:text-[20px] text-white/70">réservations</p>
+                  <p className="mt-1 text-[14px] lg:text-[clamp(14px,1.3vw,20px)] text-white/70">réservations</p>
                 </div>
                 <div>
-                  <p className="text-[24px] md:text-[42px] font-extrabold text-white leading-tight">
+                  <p className="text-[24px] lg:text-[clamp(24px,2.8vw,42px)] font-extrabold text-white leading-tight">
                     +1,100
                   </p>
-                  <p className="mt-1 text-[14px] md:text-[20px] text-white/70">utilisateurs</p>
+                  <p className="mt-1 text-[14px] lg:text-[clamp(14px,1.3vw,20px)] text-white/70">utilisateurs</p>
                 </div>
                 <div>
-                  <p className="text-[24px] md:text-[42px] font-extrabold text-white leading-tight">
+                  <p className="text-[24px] lg:text-[clamp(24px,2.8vw,42px)] font-extrabold text-white leading-tight">
                     +13,700
                   </p>
-                  <p className="mt-1 text-[14px] md:text-[20px] text-white/70">visiteurs</p>
+                  <p className="mt-1 text-[14px] lg:text-[clamp(14px,1.3vw,20px)] text-white/70">visiteurs</p>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function CaseStudy() {
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-3 rounded-[15px] px-8 py-4 text-[20px] md:text-[24px] font-semibold text-white transition-opacity hover:opacity-90"
+                className="w-full inline-flex items-center justify-center gap-3 rounded-[15px] px-8 py-4 text-[18px] lg:text-[clamp(18px,1.6vw,24px)] font-semibold text-white transition-opacity hover:opacity-90"
                 style={{ background: "linear-gradient(135deg, #146DFC, #0C4196)" }}
               >
                 Parlons de votre projet

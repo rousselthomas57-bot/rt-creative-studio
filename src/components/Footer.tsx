@@ -38,10 +38,10 @@ export default function Footer() {
             >
               Envoyer un e-mail
             </a>
-            <a href="#" className="text-gray-400 hover:text-text">
+            <a href="/cgv" className="text-gray-400 hover:text-text">
               Conditions générales de ventes
             </a>
-            <a href="#" className="text-gray-400 hover:text-text">
+            <a href="/mentions-legales" className="text-gray-400 hover:text-text">
               Mentions légales
             </a>
           </div>
