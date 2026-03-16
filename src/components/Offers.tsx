@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { socialOffers, linkedinOffers, type Offer } from "@/data/offers";
+import Reveal from "@/components/Reveal";
 
 const EMAIL = "bonjour@rt-creativestudio.fr";
 
@@ -75,16 +76,18 @@ export default function Offers() {
       {/* White rectangle - full width, full height, above phone but below text */}
       <div className="absolute inset-0 bg-white z-[2]" />
       <div className="relative z-10 mx-auto max-w-[1280px] px-6">
-        <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
-          Des offres pensées pour vous
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 text-[15px] md:text-base">
-          Des offres simples pour vous aider à structurer votre communication,
-          produire du contenu et gagner en visibilité.
-        </p>
+        <Reveal>
+          <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
+            Des offres pensées pour vous
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 text-[15px] md:text-base">
+            Des offres simples pour vous aider à structurer votre communication,
+            produire du contenu et gagner en visibilité.
+          </p>
+        </Reveal>
 
         {/* Toggle */}
-        <div className="mt-10 flex justify-center">
+        <Reveal delay={100} className="mt-10 flex justify-center">
           <div
             className="inline-flex rounded-[15px] border border-primary p-1"
             style={{ boxShadow: "0 0 12px 2px rgba(37, 99, 255, 0.2)" }}
@@ -110,14 +113,14 @@ export default function Offers() {
               LinkedIn
             </button>
           </div>
-        </div>
+        </Reveal>
 
         {/* Cards */}
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <Reveal delay={200} className="mt-10 grid gap-6 md:grid-cols-3">
           {offers.map((offer, i) => (
             <OfferCard key={offer.name + tab} offer={offer} featured={i === 1} />
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

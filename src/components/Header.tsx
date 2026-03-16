@@ -13,10 +13,10 @@ export default function Header() {
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2">
           <Image
-            src="/images/logo-rt.svg"
+            src="/images/rt-logo.webp"
             alt="RT Creative Studio"
             width={160}
-            height={24}
+            height={41}
             priority
           />
         </a>

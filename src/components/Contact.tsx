@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 const CALENDLY_URL = "https://calendly.com/roussel-thomas57/30min";
 const EMAIL = "bonjour@rt-creativestudio.fr";
@@ -7,15 +10,17 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-16 md:py-24 overflow-hidden">
 <div className="relative z-10 mx-auto max-w-[1280px] px-6">
-        <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
-          Parlons de votre projet
-        </h2>
-        <p className="mx-auto mt-4 max-w-xl text-center text-gray-500 text-[15px] md:text-base">
-          Vous avez un besoin en contenu, en visibilité ou en stratégie réseaux
-          sociaux ? Choisissez le moyen le plus simple pour me contacter.
-        </p>
+        <Reveal>
+          <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
+            Parlons de votre projet
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-center text-gray-500 text-[15px] md:text-base">
+            Vous avez un besoin en contenu, en visibilité ou en stratégie réseaux
+            sociaux ? Choisissez le moyen le plus simple pour me contacter.
+          </p>
+        </Reveal>
 
-        <div className="mt-12 flex flex-col items-center gap-12 md:flex-row md:justify-center md:gap-20">
+        <Reveal delay={150} className="mt-12 flex flex-col items-center gap-12 md:flex-row md:justify-center md:gap-20">
           {/* Buttons */}
           <div className="flex flex-col gap-4 w-full md:w-auto">
             <a
@@ -79,7 +84,7 @@ export default function Contact() {
               Stratégie de contenu & réseaux sociaux
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

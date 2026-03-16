@@ -18,7 +18,7 @@ export default function Hero() {
           {/* Text */}
           <div className="relative z-20 md:w-[70%]">
             <h1
-              className="font-extrabold leading-[1.1] tracking-tight text-text text-[32px] md:text-[clamp(32px,4.5vw,64px)]"
+              className="animate-fade-up font-extrabold leading-[1.1] tracking-tight text-text text-[32px] md:text-[clamp(32px,4.5vw,64px)]"
             >
               <span
                 style={{
@@ -34,7 +34,7 @@ export default function Hero() {
               <br />
               grâce aux réseaux sociaux
             </h1>
-            <p className="mt-4 max-w-lg text-[14px] leading-relaxed text-gray-500 sm:text-[15px] md:mt-6 md:text-lg">
+            <p className="animate-fade-up animate-delay-1 mt-4 max-w-lg text-[14px] leading-relaxed text-gray-500 sm:text-[15px] md:mt-6 md:text-lg">
               Stratégie de contenu, vidéos courtes et accompagnement
               pour PME, indépendants et marques locales.
             </p>
@@ -43,7 +43,7 @@ export default function Hero() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 hidden rounded-[15px] px-7 py-3.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 md:inline-block md:text-base"
+              className="animate-fade-up animate-delay-2 mt-8 hidden rounded-[15px] px-7 py-3.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 md:inline-block md:text-base"
               style={{
                 background: "linear-gradient(135deg, #146DFC, #0C4196)",
               }}
@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
 
           {/* Phone visual */}
-          <div className="relative z-10 flex justify-center self-center md:w-[45%] md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:mt-[70px]">
+          <div className="animate-fade-up animate-delay-3 relative z-10 flex justify-center self-center md:w-[45%] md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:mt-[70px]">
             <Image
               src="/images/2mockup-iphone-hero.webp"
               alt="Exemple de contenu vidéo sur mobile"

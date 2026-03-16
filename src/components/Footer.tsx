@@ -11,10 +11,10 @@ export default function Footer() {
           {/* Left */}
           <div className="max-w-sm">
             <Image
-              src="/images/logo-rt.svg"
+              src="/images/rt-logo.webp"
               alt="RT Creative Studio"
               width={140}
-              height={21}
+              height={36}
             />
             <p className="mt-4 text-sm leading-relaxed text-gray-500">
               Stratégie de contenu, vidéos courtes et réseaux sociaux pour PME
@@ -37,6 +37,9 @@ export default function Footer() {
               className="text-text hover:text-primary"
             >
               Envoyer un e-mail
+            </a>
+            <a href="/a-propos" className="text-gray-400 hover:text-text">
+              À propos
             </a>
             <a href="/cgv" className="text-gray-400 hover:text-text">
               Conditions générales de ventes

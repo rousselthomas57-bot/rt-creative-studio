@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
+import CountUp from "@/components/CountUp";
 
 const CALENDLY_URL = "https://calendly.com/roussel-thomas57/30min";
 
@@ -6,16 +10,18 @@ export default function CaseStudy() {
   return (
     <section id="a-propos" className="relative py-16 md:py-24 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-[1280px] px-6">
-        <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
-          GuidMe : un cas concret
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 text-[15px] md:text-base">
-          GuidMe est une plateforme d&apos;orientation par visioconférence.
-          L&apos;objectif : développer sa visibilité, créer une communauté et
-          générer des réservations.
-        </p>
+        <Reveal>
+          <h2 className="text-center text-[30px] font-extrabold md:text-[44px]">
+            GuidMe : un cas concret
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 text-[15px] md:text-base">
+            GuidMe est une plateforme d&apos;orientation par visioconférence.
+            L&apos;objectif : développer sa visibilité, créer une communauté et
+            générer des réservations.
+          </p>
+        </Reveal>
 
-        <div className="mt-12 flex flex-col gap-6 lg:flex-row">
+        <Reveal delay={150} className="mt-12 flex flex-col gap-6 lg:flex-row">
           {/* Blue card with gradient */}
           <div
             className="relative rounded-3xl p-8 pb-0 text-white md:p-10 md:pb-0 h-[358px] mx-auto lg:mx-0 lg:w-[50%] lg:h-[771px] lg:flex-shrink-0 overflow-hidden"
@@ -100,7 +106,7 @@ export default function CaseStudy() {
                 }}
               >
                 <p className="text-2xl font-extrabold text-text lg:text-[clamp(24px,2.5vw,36px)]">
-                  +13,2 M
+                  +<CountUp end={13.2} suffix=" M" decimals={1} duration={1800} />
                 </p>
                 <p className="mt-2 text-xs md:text-sm text-text leading-snug">
                   Vues organique tout réseaux confondus
@@ -116,7 +122,7 @@ export default function CaseStudy() {
                 }}
               >
                 <p className="text-2xl font-extrabold text-text lg:text-[clamp(24px,2.5vw,36px)]">
-                  +14,000
+                  +<CountUp end={14000} duration={1800} />
                 </p>
                 <p className="mt-2 text-xs md:text-sm text-text leading-snug">
                   Abonnés tout réseaux confondus
@@ -139,19 +145,19 @@ export default function CaseStudy() {
               <div className="mt-5 grid grid-cols-3 gap-3">
                 <div>
                   <p className="text-[24px] lg:text-[clamp(24px,2.8vw,42px)] font-extrabold text-white leading-tight">
-                    +150
+                    +<CountUp end={150} duration={1500} />
                   </p>
                   <p className="mt-1 text-[14px] lg:text-[clamp(14px,1.3vw,20px)] text-white/70">réservations</p>
                 </div>
                 <div>
                   <p className="text-[24px] lg:text-[clamp(24px,2.8vw,42px)] font-extrabold text-white leading-tight">
-                    +1,100
+                    +<CountUp end={1100} duration={1500} />
                   </p>
                   <p className="mt-1 text-[14px] lg:text-[clamp(14px,1.3vw,20px)] text-white/70">utilisateurs</p>
                 </div>
                 <div>
                   <p className="text-[24px] lg:text-[clamp(24px,2.8vw,42px)] font-extrabold text-white leading-tight">
-                    +13,700
+                    +<CountUp end={13700} duration={1800} />
                   </p>
                   <p className="mt-1 text-[14px] lg:text-[clamp(14px,1.3vw,20px)] text-white/70">visiteurs</p>
                 </div>
@@ -175,7 +181,7 @@ export default function CaseStudy() {
               </a>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
